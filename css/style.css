@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 40px;
+
+}
+
+.btn-primary {
+    background-color: #F948B2;
+}
+
+.btn-secondary {
+    background-color: #4EC5F7;
+}
+
+/* header section styles  */
+header {
+    background-color: #FFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 45px 0;
+
+}
+
+.logo img {
+    width: 86px;
+    height: 40px;
+}
+
+.logo h3 {
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo-g {
+    color: #F948B2;
+}
+
+.menus {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 32px;
+}
+
+.menu-itme {
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.follow-us {
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 18px 24px;
+    display: flex;
+    gap: 24px;
+
+}
+
+.fa-brands {
+    font-size: 24px;
+    color: #F61C0D;
+}
+
+/* ends header section styles  */
+
+
+/* banner section styles  */
+.banner-section {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-content {
+    width: 50%;
+    text-align: left;
+}
+
+.banner-content .title-top {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-content .main-title {
+    color: transparent;
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 18px;
+
+}
+
+.btn-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.banner-content-icon {
+    margin-right: 10px;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {}
+
+/* end banner section styles  */
