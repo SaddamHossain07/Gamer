@@ -1,3 +1,4 @@
+/* global styles goes here  */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap');
 
 * {
@@ -33,6 +34,22 @@ body {
 .btn-secondary {
     background-color: #4EC5F7;
 }
+
+.section-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.section-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 18px 0;
+    line-height: 30px;
+}
+
+/* end global styles  */
 
 /* header section styles  */
 header {
@@ -102,7 +119,8 @@ header {
 
 
 /* banner section styles  */
-.banner-section {
+.banner-section,
+.we-are-gamer-section {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
@@ -161,6 +179,47 @@ header {
 
 /* end banner section styles  */
 
+/* we are gamer section styles  */
+.we-are-gamer-section {
+    padding: 95px;
+}
+
+.gamer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+}
+
+.gamer-image {
+    width: 50%;
+    margin-right: 50px;
+}
+
+.gamer-content {
+    text-align: right;
+    width: 50%;
+}
+
+.gamer-content button {
+    margin-top: 20px;
+}
+
+.gamer-caption {
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 20px;
+}
+
+.gamer-caption span {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* end we are gamer section styles  */
+
 /* online games styles  */
 .online-game-section {
     text-align: center;
@@ -169,19 +228,6 @@ header {
 
 .online-game-section p {
     text-align: center;
-}
-
-.section-title {
-    color: #0B0223;
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.section-description {
-    color: #534C64;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 18px 0;
 }
 
 .grid-online-games {
