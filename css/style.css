@@ -237,6 +237,44 @@ header {
     gap: 24px;
 }
 
+.card-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.images {
+    display: block;
+    width: 100%;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d1925;
+    color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+    font-size: 25px;
+}
+
+.hover-overlay .fa-regular {
+    font-size: 40px;
+}
+
+.hover-overlay:hover {
+    opacity: 0.8;
+    color: #FFF;
+}
+
 .grid-online-games .card p {
     color: #534C64;
     font-size: 20px;
@@ -359,6 +397,7 @@ footer {
     padding: 60px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 60px;
 }
 
@@ -386,6 +425,7 @@ footer {
 .footer-nav-bottom {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 60px;
     gap: 60px;
 }
@@ -403,5 +443,114 @@ footer {
     font-size: 16px;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.60);
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+/* end footer section styles  */
+
+/* responsive style goes here  */
+@media screen and (max-width: 786px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: auto;
+    }
+
+    .menus {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .banner {
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .banner-content {
+        width: auto;
+    }
+
+    .banner-img {
+        width: auto;
+    }
+
+    .gamer-container {
+        flex-direction: column;
+        /* gap: 50px;
+        padding: 20px; */
+        align-items: baseline;
+        justify-content: baseline;
+        gap: 20px;
+    }
+
+    .gamer-image {
+        width: auto;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .gamer-content {
+        width: auto;
+        padding: 0;
+        margin: 0 auto;
+
+    }
+
+    .grid-online-games {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .play-games {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-games-img {
+        object-fit: fill;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .positioned-img {
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        display: none;
+
+    }
+
+    .play-games-content {
+        width: 50%;
+        text-align: center;
+    }
+
+    .play-games-content h3,
+    p {
+        text-align: center;
+    }
+
+    .game-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .social-area {
+        display: grid;
+        grid-template-columns: repeat(3, 40px);
+        justify-content: center;
+        align-content: center;
+        gap: 40px;
+    }
 }
